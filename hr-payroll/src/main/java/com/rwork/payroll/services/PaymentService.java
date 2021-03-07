@@ -1,7 +1,6 @@
 package com.rwork.payroll.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.rwork.payroll.entities.Payment;
@@ -11,9 +10,6 @@ import com.rwork.payroll.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class PaymentService {
-
-	@Value("${hr-worker.host}")
-	private String workerHost;
 
 	@Autowired
 	private WorkerFeignClient workerFeignClient;
