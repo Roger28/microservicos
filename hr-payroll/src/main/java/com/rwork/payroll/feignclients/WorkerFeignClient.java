@@ -13,5 +13,5 @@ import com.rwork.payroll.entities.Worker;
 public interface WorkerFeignClient {
 
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<Worker> findById(@PathVariable Long id);
+	ResponseEntity<Worker> findById(@PathVariable Long id);
 }
