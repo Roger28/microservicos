@@ -23,7 +23,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	private JwtAccessTokenConverter accessTokenConverter;
 
 	@Autowired
-	JwtTokenStore jwtTokenStore;
+	private JwtTokenStore jwtTokenStore;
 
 	@Autowired
 	private AuthenticationManager authenticationManager;
